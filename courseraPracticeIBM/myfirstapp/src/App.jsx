@@ -1,13 +1,23 @@
-function App(props) { // primary component , it is a defualt export
-  const currDate = new Date();
+import React, { useState, useEffect } from 'react'
+
+function App() { // primary component , it is a defualt export
+  const [currDate, setCurrDate] = useState(new Date()); // 1. Use 'useState' to create a state variable for the current time
+
+  useEffect(() => {     // 2. use 'useEffect' to set up timer when the component mounts.
+    const timerID = setInterval(() =>{    // This function will run once after the initial render
+      setCurrDate(new Date());  // update the state with the new time every second.
+    }, 1000);
+
+    return () => clearInterval(timerID);    // 3. clear up the timer when the component unmounts
+  }, []);   // the empty array  [] tells React to run this effect only once.
 
   return (
     <div>
-      <h1>Hello World!</h1>
+      <h1>Hello World!<br />Im Rodrigo Casio</h1>
       <h2>The time now is {currDate.toLocaleTimeString()}.</h2>
+      <h3>Today is {currDate.toLocaleDateString()}.</h3>
       <p>This is my first time using JSX and it is awesome!</p>
-      <p>Today is <strong>August 27, 2025</strong> and my name is Rodrigo Casio</p>
-      <p>I will become a great developer and engineer!</p>
+      <p>One day will become a great developer and engineer!</p>
       {/*child div here adding components inside this compontens*/}
       <div>
         <Comp2A />
