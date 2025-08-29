@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import ListFavLanguages, {Comp1LFL, Comp2LFL} from './Components/ListFavLanguages.jsx';
 import OrganizationDetails from './Components/OrganizationDetails.jsx'; // importing the new parent component
 import Card from './Components/Card.jsx';
