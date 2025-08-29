@@ -2,6 +2,7 @@ import ListFavLanguages, {Comp1LFL, Comp2LFL} from './Components/ListFavLanguage
 import OrganizationDetails from './Components/OrganizationDetails.jsx'; // importing the new parent component
 import Card from './Components/Card.jsx';
 import Clock from './Components/Clock.jsx';
+import CardCounter from './Components/CardCounter.jsx'
 
 function App() { // primary component , it is a defualt export
   return (
@@ -14,6 +15,7 @@ function App() { // primary component , it is a defualt export
         <ListFavLanguages />
         <OrganizationDetails />   
         <Card />
+        <CardCounter />
       </div>
       <div>
         <h5>Below are secondary components from the file App</h5>

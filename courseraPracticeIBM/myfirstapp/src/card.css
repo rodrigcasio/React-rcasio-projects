@@ -1,0 +1,20 @@
+.cardN-container {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+  
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures image corners are rounded */
+}
+
+.cardN-container h1 {
+    font-size: 20px;
+    font-family: arial;
+}
+
+.cardN-container p {
+    font-family: Verdana;
+}
