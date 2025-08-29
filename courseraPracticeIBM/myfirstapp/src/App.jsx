@@ -3,6 +3,7 @@ import OrganizationDetails from './Components/OrganizationDetails.jsx'; // impor
 import Card from './Components/Card.jsx';
 import Clock from './Components/Clock.jsx';
 import CardCounter from './Components/CardCounter.jsx'
+import ToggleButton from './Components/ToggleButton.jsx'
 
 function App() { // primary component , it is a defualt export
   return (
@@ -12,6 +13,7 @@ function App() { // primary component , it is a defualt export
       <p>time: {<Clock />}</p>
       <div>
         <h2>Below are the components from their own file</h2>
+        <ToggleButton />       
         <ListFavLanguages />
         <OrganizationDetails />   
         <Card />
