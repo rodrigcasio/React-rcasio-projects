@@ -33,7 +33,7 @@ class ChildInner extends React.Component {
         super(props)
     }
     render() {
-        const txtStyle = { color: this.props.color }
+        const txtStyle = { color: this.props.color }    // "color:" this is a new propery key 
         return (
             <span style={txtStyle}>{this.props.name}</span>
         );
@@ -87,4 +87,41 @@ Think of the parent-child relationship like this:
   * The **`ChildInner`** component is the child, who can open the lunchbox (`this.props`) and use the items inside (`this.props.color`).
 
 The child doesn't know where the food came from or how it was made—it only knows what's in the lunchbox. Similarly, `ChildInner` doesn't know about `ParentComp`'s state; it only knows about the props it receives. 
+*/
+
+
+/*
+The `color:` in `const txtStyle = { color: this.props.color }` is a new **key** in a plain JavaScript object. You're creating a new object named `txtStyle` that will be used for inline CSS styling.
+
+Here's the breakdown:
+
+* **`{}`**: This creates a new JavaScript object.
+* **`color:`**: This is a new **property key** within that object. This key's name is the same as the CSS property you want to set (`color`).
+* **`this.props.color`**: This is the **value** you are assigning to the `color` key. As we discussed, this value is the same as the one held in the parent component's state (`this.state.childColor`).
+
+So, yes, you're creating a new object and assigning the value of the prop to a new key within that object. This new object (`txtStyle`) is then used in your JSX to apply the style:
+
+`<span style={txtStyle}>...</span>`
+
+*/
+
+/*
+
+Here's the breakdown:
+
+* **`const txtStyle = { color: this.props.color }`**: You are creating a JavaScript object named `txtStyle`. This object has a single key-value pair: `color` as the key, and the value from your prop as the value. This object now fully represents the CSS style you want to apply.
+
+* **`<span style={txtStyle}>`**: When you pass this object to the `style` attribute, React understands that it should apply all the CSS properties defined within that object to the `<span>` element. It automatically knows that `txtStyle` contains the properties (like `color`, `fontSize`, etc.) to be applied.
+
+The syntax for passing props and the syntax for inline styles are different because they serve different purposes:
+
+* **Props:** The syntax `<ChildInner color={this.state.childColor} />` is for passing specific, named values to a child component. You use the prop name (`color`) to retrieve its value in the child.
+
+* **Inline Styles:** The syntax `style={txtStyle}` is for applying a complete set of CSS rules to a single HTML element. You pass the entire style object at once. React is designed to handle this object and apply each key-value pair as a style.
+
+Think of it this way:
+
+* **Props (`{...}`):** You're passing a specific item to a function. The function needs to know the name of that item to use it.
+* **Style (`{...}`):** You're passing a whole recipe to a rendering engine. The engine knows how to read all the ingredients and apply them without you having to point out each one. 
+
 */
