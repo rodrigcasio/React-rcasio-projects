@@ -1,11 +1,16 @@
 /* Syles for ContentRating componen */
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
 .content-rating {
     text-align: center;
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
