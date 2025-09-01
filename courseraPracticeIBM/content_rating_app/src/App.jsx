@@ -1,9 +1,10 @@
 import './App.css'
-
+import ContentRating from './Components/ContentRating'
 function App() {
 
   return (
     <>
+    <ContentRating />     
     </>
   )
 }
