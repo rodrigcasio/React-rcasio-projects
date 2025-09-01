@@ -21,7 +21,7 @@ class ContentRating extends Component {
             <>
             <div className="content-rating"> 
                 <p>
-                    
+                    My name is Rodrigo Casio and I'll become a great software engineer                   
                 </p>
                 <div className="rating-buttons">
                     <button className="like-button" onClick={this.handleLikes}>Like ({this.state.likes})</button>
