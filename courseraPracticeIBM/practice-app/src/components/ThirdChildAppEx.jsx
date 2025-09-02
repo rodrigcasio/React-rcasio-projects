@@ -17,7 +17,7 @@ const ThirdChildAppEx = (props) => {
             <h2>{props.dept_id}</h2>
             <div>{props.dept_name}</div>
             <button onClick={changeIncrease}>Click here to {showIncrease ? 'Hide' : 'Show'} the yearly increment</button>
-            {showIncrease && <div>{props.increase}</div>}
+            {showIncrease && <div>${props.increase}</div>}
         </>
     );
 }
