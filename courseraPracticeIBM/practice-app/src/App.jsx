@@ -1,20 +1,23 @@
-import { useState } from 'react'
-import './App.css'
+import CounterButton from './components/CounterButton.jsx'
+import FirstChildAppEx from './components/FirstChildAppEx.jsx'
 import ParentComp from './components/ParentComp.jsx'
+import SecondChildAppEx from './components/SecondChildAppEx.jsx'
+import ThirdChildAppEx from './components/ThirdChildAppEx.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+    const employee_id = 10007;    // example of passing prop dynamically to the SecondChildAppEx component using {}.
   return (
     <>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <ParentComp />
-      </div>
+      <CounterButton />
+      <ParentComp />
+      <FirstChildAppEx  name="Rodrigo" /> 
+      <SecondChildAppEx name="Rodrigo Casio Garcia" employeeID={employee_id} dept_name="Software Engineering" />
+
+      <ThirdChildAppEx name="Rodrigo Casio" employeeId={employee_id} dept_id={577} increase={10000} />
     </>
   )
 }
 
 export default App
+
+
