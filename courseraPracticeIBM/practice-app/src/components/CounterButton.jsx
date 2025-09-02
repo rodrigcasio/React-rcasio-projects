@@ -6,7 +6,7 @@ const CounterButton = () => {
     const [count, setCount] = useState(0);
     
     const changeCount = () => {
-        (setCount(count + 1));
+        (setCount(count + 1));      // parenthesis is not necessary, it can be : setCount(count + 1)
     }
     return(
         <>
