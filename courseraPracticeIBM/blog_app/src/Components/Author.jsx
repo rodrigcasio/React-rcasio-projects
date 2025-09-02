@@ -1,9 +1,9 @@
 import React from 'react';
 // Author feature for blog 
 
-const Author = ({ Author }) => {
+const Author = ({ author}) => {
     return (
-        <p>Written by: {Author}.</p>
+        <p>Written by:{author}.</p>
     );
 }
 
