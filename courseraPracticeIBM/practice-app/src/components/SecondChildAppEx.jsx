@@ -7,9 +7,15 @@ const SecondChildAppEx = (props) => {
         <>
             <h2>{props.name}</h2>
             <div>{props.employeeID}</div>
-            <div>{props.dept_id}</div>
+            <div>{props.dept_name}</div>
         </>
     );
 }
+
+// Setting defualt props outside the function
+SecondChildAppEx.defaultProps = {
+    dept_name:  "Software Developer"
+};
+
 
 export default SecondChildAppEx;

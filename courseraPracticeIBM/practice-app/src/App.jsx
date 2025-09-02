@@ -10,7 +10,7 @@ function App() {
       <CounterButton />
       <ParentComp />
       <FirstChildAppEx  name="Rodrigo" /> 
-      <SecondChildAppEx name="Rodrigo Casio Garcia" employeeID={employee_id} dept_id="123477" />
+      <SecondChildAppEx name="Rodrigo Casio Garcia" employeeID={employee_id} dept_name="Software Engineering" />
     </>
   )
 }
