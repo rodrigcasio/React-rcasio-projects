@@ -12,7 +12,6 @@ const ThirdChildAppEx = (props) => {
 
     return (
         <>
-            <h2>showIncrease = {showIncrease}</h2>
             <h1>{props.name}</h1>
             <h2>{props.employeeId}</h2>
             <h2>{props.dept_id}</h2>
