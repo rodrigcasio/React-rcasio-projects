@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'reac';
+import { useState } from 'react';
 // Component example of using states to change a name with a button 
 const StateManagement = () => {
     const [name, setName] = useState('John');
