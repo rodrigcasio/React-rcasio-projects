@@ -9,14 +9,16 @@ import Title from './Title';
 import Author from './Author';
 import Type from './Type';
 import Description from './Description';
+import Body from './Body';
 
-const NovelBlog = ({ title, author, type, description }) => {
+const NovelBlog = ({ title, author, type, description, body }) => {
     return (
         <div className="novel-post">
             <Title title={title} />
             <Author author={author} />
             <Type type={type} />
             < Description description={description} />
+            <Body body={body} />
         </div>
         
     );

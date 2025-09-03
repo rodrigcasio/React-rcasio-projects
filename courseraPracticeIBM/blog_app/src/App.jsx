@@ -6,15 +6,15 @@ function App() {
     title: 'Harry Potter',
     author: 'J. K. Rowling',
     description: 'A world full of wizards and magic',
-    type: 'Fiction'
+    type: 'Fiction',
+    body: "Harry Potter is about an orphaned boy who discovers he's a wizard and attends a magical school called Hogwarts. He and his friends navigate their studies while uncovering secrets about his past and facing off against the dark wizard who killed his parents."
   };
 
   return (
     <>
       <div className="app">
         <NovelBlog title={novel.title} author={novel.author}
-          description={novel.description} type={novel.type}
-        />
+          type={novel.type} description={novel.description} body={novel.body}/>
       </div>
     </>
   );
