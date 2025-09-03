@@ -1,6 +1,7 @@
 import CounterButton from './components/CounterButton.jsx'
 import CounterButton2 from './components/CounterButton2.jsx'
 import FirstChildAppEx from './components/FirstChildAppEx.jsx'
+import IntervalComponent from './components/IntervalComponent.jsx'
 import ParentComp from './components/ParentComp.jsx'
 import SecondChildAppEx from './components/SecondChildAppEx.jsx'
 import StateManagement from './components/StateManagement.jsx'
@@ -20,6 +21,7 @@ function App() {
       <StateManagement />
       <ToggleMessage />
       <CounterButton2 />
+      <IntervalComponent />
     </>
   )
 }
