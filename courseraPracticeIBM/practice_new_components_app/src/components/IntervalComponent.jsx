@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-
+// example of the Unmounting phase of a function component 
 const IntervalComponent = () => {
     useEffect(() => {
         const timer = setInterval(() => {
