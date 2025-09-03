@@ -7,7 +7,7 @@ function App() {
     author: 'J. K. Rowling',
     description: 'A world full of wizards and magic',
     type: 'Fiction',
-    body: "Harry Potter is about an orphaned boy who discovers he's a wizard and attends a magical school called Hogwarts. He and his friends navigate their studies while uncovering secrets about his past and facing off against the dark wizard who killed his parents. Harry Potter is a seven-book fantasy series about a young wizard named Harry Potter and his friends Hermione Granger and Ron Weasley. The story follows their years at Hogwarts School of Witchcraft and Wizardry, where they face the growing threat of Lord Voldemort, the dark wizard who murdered Harry's parents. The series explores themes of love, friendship, loss, and the eternal battle between good and evil as Harry uncovers the truth about his past and prepares for his final confrontation with Voldemort."
+    body: "The Harry Potter series follows the journey of an orphaned boy named Harry Potter, who discovers on his eleventh birthday that he is a wizard. He is invited to attend Hogwarts School of Witchcraft and Wizardry, where he makes two loyal friends, Ron Weasley and Hermione Granger. As the series progresses, Harry learns about his past and the events that led to his parents' deaths at the hands of the evil dark wizard, Lord Voldemort. With the help of his friends and allies, Harry grows more powerful, all while uncovering the truth about his destiny and preparing for a final, climactic confrontation with Voldemort. The books explore deep themes of love, loss, courage, and the power of friendship in the face of immense darkness." 
   };
 
   return (
