@@ -11,6 +11,7 @@ const CounterButton = () => {
     return(
         <>
             <div className="card">
+                <h1>Direct state update</h1>
                 <button onClick={changeCount}>Count is {count}</button>
             </div>
         </>
