@@ -1,6 +1,6 @@
 import React from 'react';
 import NovelBlog from './Components/NovelBlog';
-
+import './App.css';
 function App() {
   const novel = {   // this is justa local variable variable that holds appropiate data for title, author, description, and type components 
     title: 'Harry Potter',

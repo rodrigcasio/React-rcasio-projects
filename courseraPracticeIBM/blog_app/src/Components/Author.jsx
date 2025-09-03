@@ -3,7 +3,7 @@ import React from 'react';
 
 const Author = ({ author}) => {
     return (
-        <p>Written by:{author}.</p>
+        <h3>Written by {author}.</h3>
     );
 }
 
