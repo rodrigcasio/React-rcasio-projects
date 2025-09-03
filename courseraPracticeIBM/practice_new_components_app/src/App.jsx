@@ -1,4 +1,5 @@
 import CounterButton from './components/CounterButton.jsx'
+import CounterButton2 from './components/CounterButton2.jsx'
 import FirstChildAppEx from './components/FirstChildAppEx.jsx'
 import ParentComp from './components/ParentComp.jsx'
 import SecondChildAppEx from './components/SecondChildAppEx.jsx'
@@ -18,6 +19,7 @@ function App() {
       <ThirdChildAppEx name="Rodrigo Casio" employeeId={employee_id} dept_id={577} increase={10000} />
       <StateManagement />
       <ToggleMessage />
+      <CounterButton2 />
     </>
   )
 }
