@@ -1,4 +1,5 @@
 import AddRemoveItemsButtons from './components/AddRemoveItemsButtons.jsx'
+import ConditionalArrayEx from './components/ConditionalArrayEx.jsx'
 import CounterButton from './components/CounterButton.jsx'
 import CounterButton2 from './components/CounterButton2.jsx'
 import FirstChildAppEx from './components/FirstChildAppEx.jsx'
@@ -24,6 +25,7 @@ function App() {
       <CounterButton2 />
       <IntervalComponent />
       <AddRemoveItemsButtons />
+      <ConditionalArrayEx />
     </>
   )
 }
