@@ -1,5 +1,5 @@
 import React from 'react';
-import './EventPlanner';
+import './EventPlanner.css';
 
 const EventPlanner = () => {
     return (
