@@ -25,7 +25,7 @@ header h1 {
     background-color: #f85199;
     color: #fff;
     border: none;
-    padding: 10px 10px;
+    padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -35,7 +35,7 @@ header h1 {
     background-color: #d32b74;
 }
 
-.features, .testimonials, .contact, .event_categories {
+.features, .testimonials, .contact, .events_categories {
     margin-top: 50px;
 }
 
