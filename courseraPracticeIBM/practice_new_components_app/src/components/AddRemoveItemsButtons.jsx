@@ -19,15 +19,19 @@ const AddRemoveItemsButtons = () => {
     return (
         <div>
             <h1>Seasons</h1>
-            <ul>
-                {items.map((item, index) => (
-                    <li key={index}>{item}
-                        <button onClick={() => removeItem(index)}>Remove</button>
-                    </li>   // each li will have its own button 
-                ))}
-            </ul>
+            {items.length > 0 ? (           // added a condition if there are or not season in the items list
+                <ul>
+                    {items.map((item, index) => (
+                        <li key={index}>{item}
+                            <button onClick={() => removeItem(index)}>Remove</button>
+                        </li>   // each li will have its own button 
+                    ))}
+                </ul>
+            ) : (
+                <p>No Seasons are available </p>
+            )}
             <input type="text" value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)} />
+                onChange={(e) => setInputValue(e.target.value)} />     {/* setInputValue(inputValue) = setInputValue(e.target.value) targetting the text content */}
             <button onClick={addItem}>Add</button>
         </div>
     );
