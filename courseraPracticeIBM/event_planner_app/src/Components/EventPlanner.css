@@ -102,12 +102,12 @@ footer {
     font-size: 0.9rem;
 }
 
-.event_categories h1 {
+.events_categories h1 {
     background-color: gray;
     text-align: center;
 }
 
-.event_categories {
+.events_categories {
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -118,14 +118,14 @@ footer {
     width: 270px;
 }
 
-.event_categories ul h2 {
+.events_categories ul h2 {
     background-color: #e46a9d;
     text-align: center;
     padding: 5px 10px;
     color: white;
 }
 
-.event_categories ul li {
+.events_categories ul li {
     list-style-type: none;
     font-size: 1.1rem;
     line-height: 24px;
