@@ -1,5 +1,6 @@
 import React from 'react';
 import './EventPlanner.css';
+import Footer from './Footer';
 
 const EventPlanner = () => {
     return (
@@ -74,6 +75,9 @@ const EventPlanner = () => {
                     <button className="submit-button">Send</button>
                 </form>
             </section>
+            <div className="footer">
+                <Footer />
+            </div>
         </div>
 
     );
