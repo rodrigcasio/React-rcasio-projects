@@ -50,8 +50,20 @@ const EventPlanner = () => {
                     <li>Reminders and notifications</li>
                 </ul>
             </section>
-            <section className="testimonials">
-
+            <section className="testimonial">
+                <h2>Testimonials</h2>
+                <div className="testimonial">
+                    <p>"Event Planner made orginizing my wedding a breeze. Highly recommended!"</p>
+                    <p className="author">- Emily Johnson</p>
+                </div>
+                <div className="testimonial">
+                    <p>"I use Event Planner for all my corporate events. It saves me so much time and effort!"</p>
+                    <p className="author">- John Pork</p>
+                </div>
+                <div className="testimonial">
+                    <p>"Event Planner helped me set up a huge birthday party for my moms's 60's birthday."</p>
+                    <p className="author">- Rodrigo Casio</p>
+                </div>
             </section>
             <section className="contact">
 
