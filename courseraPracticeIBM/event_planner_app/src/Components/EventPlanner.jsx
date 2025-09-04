@@ -50,7 +50,7 @@ const EventPlanner = () => {
                     <li>Reminders and notifications</li>
                 </ul>
             </section>
-            <section className="testimonial">
+            <section className="testimonials">
                 <h2>Testimonials</h2>
                 <div className="testimonial">
                     <p>"Event Planner made orginizing my wedding a breeze. Highly recommended!"</p>
