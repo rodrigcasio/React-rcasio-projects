@@ -8,7 +8,7 @@
                 linear-gradient(225deg, #fee6f0 25%, transparent 25%) -50px 0,
                 linear-gradient(315deg, #fee6f0 25%, transparent 25%),
                 linear-gradient(45deg, #fee6f0 25%, transparent 25%);
-    background-color: 100px 100px;
+    background-size: 100px 100px;
 }
 
 header h1 {
