@@ -48,6 +48,12 @@ React's virtual DOM compares the updated app with
 the previous virtual DOM and determines that
 only the state of the first child component has changed.
 Therefore, it only updates the relevant part of the DOM,
-the child component, without re-rendering the entire list. "  : IBM.
+the child component, without re-rendering the entire list.
+
+This example demonstrates how React's virtual DOM updates
+only the necessary parts of
+the DOM, improving the application's performance,
+especially in scenarios where
+only specific components or elements need to be updated. "  : IBM.
 
 */
