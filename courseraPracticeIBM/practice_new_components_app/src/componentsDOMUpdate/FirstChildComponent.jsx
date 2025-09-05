@@ -15,6 +15,7 @@ const FirstChildComponent = () => {
     console.log('Rendering First Child Component');
     return (
         <div>
+            <h1>Rendering FirstChildComponent, and how React's virtua DOM udpates only in necessary parts of the DOM</h1>
             <button onClick={updateItem}>Update Item</button> {/* this allows to update the first item */}
             <ul> {items.map((item, index) => (              // creates a li tag the map() for each item
                 <li key={index}>{item}</li> ))} 
