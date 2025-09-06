@@ -9,6 +9,15 @@ const FetchData = () => {
         <>
             <ul className="list_data_main">
                 <h1 className="usefetch_heading">Use Fetch Custom Hook</h1>
+                {data && data.map((e, index) => (    // conditional if data is true.. we can fetch data using 'e' parameter to access each type of data passed e.
+                    <li key={index} className="list_data">
+                        <h3>{e.name}</h3>
+                        <p><strong>Importance: </strong>{e.importance}</p>
+                        <p><stong>Benefits: </stong>{e.benefits}</p>
+                        <p><strong>Best time to intake: </strong>{e.best_time_to_intake}</p>
+                        <a href={e.image}></a>
+                    </li>
+                ))}
             </ul>
         </>
     );
