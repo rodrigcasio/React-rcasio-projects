@@ -12,7 +12,7 @@ const FetchYogaData = () => {
         <>
             <h1 className="usefetch_heading">Yoga Benefits (re-using the Use Fetch custom hook)</h1>
             <ul className="list_data_main">
-                {data && data.map((e, index) => (
+                {data && data.map((e, index) => (      // example of conditional rendering, if data is truthy (not null, flase or undefined) then data.map() will render the list!
                     <li key={index} className="list_data">
                         <h3>{e.name}</h3>
                         <p><strong>Benefits: </strong>{e.benefits}</p>
