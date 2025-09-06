@@ -19,15 +19,10 @@ const TodoList = () => {
     const handleAddList = (index) => {
         if(listInputs[index] && listInputs[index].trim !== ''){                 // Checking  if the input for the given index is not empty or just whitespace
             const newTodos = [...todos];    // creates a copy of the current todos array
-            newTodos[index].list.push(listInputs[index]);   //  Add the new list item to the corresponding heading's list 
+            newTodos[index].lists.push(listInputs[index]);   //  Add the new list item to the corresponding heading's list 
             setTodos(newTodos);     // Update the todos state with the new list item
             setListInputs({...listInputs, [index] : ''});   // Clear the input field for that index 
         }
-    }
-
-    // Function to update list value for a specific heading index
-    const handleListInputChange = (index, value) => {
-        setListInputs({...listInputs, [index]: value });    // Update the listInputs state for the corresponding index
     }
 
     const handleDeleteTodo = (index) => {
@@ -36,6 +31,10 @@ const TodoList = () => {
         setTodos(newTodos);                 // Update th state with the new array (without the deleted todo)
     }
 
+    // Function to update list value for a specific heading index
+    const handleListInputChange = (index, value) => {
+        setListInputs({...listInputs, [index]: value });    // Update the listInputs state for the corresponding index
+    }
     return(
         <>
             <div className="todo-container">
