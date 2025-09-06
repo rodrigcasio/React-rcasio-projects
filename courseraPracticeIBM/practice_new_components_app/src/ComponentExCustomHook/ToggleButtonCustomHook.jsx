@@ -1,5 +1,5 @@
 import React from 'react';
-import {UseToggle} from './UseToggle.jsx';
+import UseToggle from './UseToggle.jsx';
 
 const ToggleButtonCustomHook = () => {
     const [isToggled, toggle] = UseToggle(false);
