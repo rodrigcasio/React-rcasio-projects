@@ -33,7 +33,7 @@ const TodoList = () => {
 
     // Function to update list value for a specific heading index
     const handleListInputChange = (index, value) => {
-        setListInputs({...listInputs, [index]: value });    // Update the listInputs state for the corresponding index
+        setListInputs({...listInputs, [index]: value });    // Track input for each heading index
     }
     return(
         <>
