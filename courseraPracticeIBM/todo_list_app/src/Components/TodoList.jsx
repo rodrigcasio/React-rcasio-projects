@@ -14,6 +14,20 @@ const TodoList = () => {
         }
     }
 
+    // Function to handle adding a new list item to a specific todo heading
+    const handleAddList = (index) => {
+        if(listInputs[index] && listInputs[index].trim !== ''){                 // Checking  if the input for the given index is not empty or just whitespace
+            const newTodos = [...todos];    // creates a copy of the current todos array
+            newTodos[index].list.push(listInputs[index]);   //  Add the new list item to the corresponding heading's list 
+            setTodos(newTodos);     // Update the todos state with the new list item
+            setListInputs({...listInputs, [index] : ''});   // Clear the input field for that index 
+        }
+    }
+
+    // Function to update list value for a specific heading index
+    const handleListInputChange = (index, value) => {
+        setListInputs({...listInputs, [index]: value });    // Update the listInputs state for the corresponding index
+    }
 
     return(
         <>
@@ -32,6 +46,11 @@ const TodoList = () => {
                         <div className="heading_todo">      {/* displaying each heaedings */}
                             <h3>{todo.heading}</h3>
                             <button className="delete-button-heading" onClick={() => handleDeleteTodo(index)}>Delete Heading </button>
+                        </div>
+                        <div className="add_list">
+                            <input type="text" className="list-input" placeholder="Add List" value={listInputs[index] || ''}
+                                onChange={(e) => handleListInputChange(index, e.target.value)} />
+                            <button clasName="add-list-button" onClick={() => handleAddList(index)}>Add List</button>
                         </div>
                     </div>
                 ))}
