@@ -1,0 +1,25 @@
+import React from 'react';
+import {useState} from 'react';
+
+const StyledComponentEx = () => {
+    const [isVisible, setIsVisible] = useState(true);
+
+    const toggleVisibility = () => {
+       setIsVisible(!isVisible);
+    }
+    const messageStyle = {
+        display: isVisible ? 'block' : 'none',
+        color: 'green',
+        fontSize: '18px',
+        marginTop: '10px',
+    };
+
+    return (
+        <div>
+            <h2>Toggle Message</h2>
+            <buttom onClick={toggleVisibility}>{isVisible ? 'Hide Message' : 'Show Message'}</buttom>
+            <p style={messageStyle}>This is a hidden message</p>
+        </div>
+    );
+}
+export default StyledComponentEx;
