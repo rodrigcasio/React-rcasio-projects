@@ -41,11 +41,11 @@ const TodoList = () => {
                 <h1 className="title">My Todo List</h1>
                 <div className="input-container">
                     <input  
-                    type="text" 
-                    className="heading-input" 
-                    placeholder="Enter heading" 
-                    value={headingInput} 
-                    onChange={(e) => {setHeadingInput(e.target.value); }} // Update heading input value
+                        type="text" 
+                        className="heading-input" 
+                        placeholder="Enter heading" 
+                        value={headingInput} 
+                        onChange={(e) => {setHeadingInput(e.target.value); }} // Update heading input value
                     />
                     <button className="add-list-button" onClick={handleAddTodo}>Add Heading</button>
                 </div>
@@ -66,10 +66,17 @@ const TodoList = () => {
                         </ul>
                         {/* Input section to add list item under this heading */}
                         <div className="add_list">  
-                            <input type="text" className="list-input" placeholder="Add List" value={listInputs[index] || ''}    // Maintain controlled input
+                            <input 
+                                type="text" 
+                                className="list-input" 
+                                placeholder="Add List" 
+                                value={listInputs[index] || ''}    // Maintain controlled input
                                 onChange={(e) => handleListInputChange(index, e.target.value)} // Update list input value
-                                />
-                            <button clasName="add-list-button" onClick={() => handleAddList(index)}>Add List</button>
+                            />
+                            <button 
+                                clasName="add-list-button" 
+                                onClick={() => handleAddList(index)}>Add List
+                            </button>
                         </div>
                     </div>
                 ))}
