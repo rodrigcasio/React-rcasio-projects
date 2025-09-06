@@ -7,6 +7,7 @@ const TodoList = () => {
     const [headingInput, setHeadingInput] = useState('');          // represent the value entered by user into the input field for adding a new heading for a todo list 
     const [listInputs, setListInputs] = useState({});       // initialize  listInputs as an empty object "{}". This state will hold the value  of input fields for each todo item individually
 
+    // function to add a new todo heading (if input is not empty)
     const handleAddTodo = () => {
         if(headingInput.trim() !== ''){
             setTodos([...todos, { heading : headingInput, lists : [] }]);
