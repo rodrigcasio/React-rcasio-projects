@@ -1,3 +1,4 @@
+import ToggleButtonCustomHook from './ComponentExCustomHook/ToggleButtonCustomHook.jsx'
 import AddRemoveItemsButtons from './components/AddRemoveItemsButtons.jsx'
 import ConditionalArrayEx from './components/ConditionalArrayEx.jsx'
 import CounterButton from './components/CounterButton.jsx'
@@ -35,6 +36,9 @@ function App() {
       <SecondChildComponent />
 
       <StyledComponentEx />
+
+      {/* example of Component that uses a custom hook */}
+      <ToggleButtonCustomHook />
     </>
   )
 }
