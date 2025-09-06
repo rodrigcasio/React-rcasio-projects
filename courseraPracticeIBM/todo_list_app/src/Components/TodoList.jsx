@@ -10,7 +10,7 @@ const TodoList = () => {
     const handleAddTodo = () => {
         if(headingInput.trim() !== ''){
             setTodos([...todos, { heading : headingInput, lists : [] }]);
-            setHeadingInputs('');
+            setHeadingInput('');
         }
     }
 
