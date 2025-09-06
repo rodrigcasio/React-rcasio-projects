@@ -7,6 +7,7 @@ import IntervalComponent from './components/IntervalComponent.jsx'
 import ParentComp from './components/ParentComp.jsx'
 import SecondChildAppEx from './components/SecondChildAppEx.jsx'
 import StateManagement from './components/StateManagement.jsx'
+import StyledComponentEx from './components/StyledComponentEx.jsx'
 import ThirdChildAppEx from './components/ThirdChildAppEx.jsx'
 import ToggleMessage from './components/ToggleMessage.jsx'
 import FirstChildComponent from './componentsDOMUpdate/FirstChildComponent.jsx'
@@ -32,6 +33,8 @@ function App() {
       {/* Adding Components for example of visualizing how React's virtual DOM udpates only the necessary parts of the DOM */}
       <FirstChildComponent />
       <SecondChildComponent />
+
+      <StyledComponentEx />
     </>
   )
 }

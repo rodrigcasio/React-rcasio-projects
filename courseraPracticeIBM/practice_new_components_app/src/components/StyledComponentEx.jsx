@@ -20,7 +20,7 @@ const StyledComponentEx = () => {
     return (
         <div>
             <h2>Toggle Message</h2>
-            <buttom onClick={toggleVisibility}>{isVisible ? 'Hide Message' : 'Show Message'}</buttom>
+            <button onClick={toggleVisibility}>{isVisible ? 'Hide Message' : 'Show Message'}</button>
             <p style={messageStyle}>This is a hidden message</p>
         </div>
     );
