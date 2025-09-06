@@ -10,7 +10,16 @@ const FetchYogaData = () => {
 
     return (
         <>
-            
+            <h1 className="usefetch_heading">Yoga Benefits (re-using the Use Fetch custom hook)</h1>
+            <ul className="list_data_main">
+                {data && data.map((e, index) => (
+                    <li key={index} className="list_data">
+                        <h3>{e.name}</h3>
+                        <p><strong>Benefits: </strong>{e.benefits}</p>
+                        <p><strong>Time Duration: </strong>{e.time_duration}</p>
+                    </li>
+                ))}
+            </ul>
         </>
     );
 }
