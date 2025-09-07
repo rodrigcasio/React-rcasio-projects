@@ -1,7 +1,7 @@
 import './FeedbackForm.css';
 import {useState} from 'react';
 const FeedbackForm = () => {
-    const [formData, setFormData] = useState({ name: '', email: '', feedback: ''});
+    const [formData, setFormData] = useState({ name: '', email: '', feedback: '', rating: ''});         // added variable key-value pair named rating
 
     // function to handle changes
     const handleChange = (event) => {
@@ -16,6 +16,7 @@ const FeedbackForm = () => {
         const confirmationMessage = `   
             Name: ${formData.name}
             Email: ${formData.email}
+            Rating: ${formData.rating}
             Feedback: ${formData.feedback}
             `;
         const isConfirmed = window.confirm(`Please confirm your details:\n${confirmationMessage}`); // displaying a confirmation dialogue presenting the current formData, if user confirms..user submits
@@ -25,6 +26,7 @@ const FeedbackForm = () => {
                 name: '',
                 email: '',
                 feedback: ''
+                
             });
             alert(`Thank you for your valuable feedback!`);
         }
@@ -51,6 +53,39 @@ const FeedbackForm = () => {
                     value={formData.email}
                     onChange={handleChange}
                 />
+                <div style={{display: "flex", gap: "10px", flexDirection: "column"}}>
+                    <span>Rate Us: </span>
+                    <p><input 
+                        type="radio"
+                        name="rating"
+                        value="1"
+                        onChange={formData.rating}
+                    /> 1</p>
+                    <p><input 
+                        type="radio"
+                        name="rating"
+                        value="2"
+                        onChange={formData.rating}
+                    /> 2</p>
+                    <p><input 
+                        type="radio"
+                        name="rating"
+                        value="3"
+                        onChange={formData.rating}
+                    /> 3</p>
+                    <p><input 
+                        type="radio"
+                        name="rating"
+                        value="4"
+                        onChange={formData.rating}
+                    /> 4</p>
+                    <p><input 
+                        type="radio"
+                        name="rating"
+                        value="5"
+                        onChange={formData.rating}
+                    /> 5</p>
+                </div>
                 <textarea
                     name="feedback"
                     placeholder="Your Feedback"
