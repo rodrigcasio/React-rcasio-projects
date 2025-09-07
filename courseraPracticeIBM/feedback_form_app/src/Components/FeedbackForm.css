@@ -27,7 +27,7 @@ nav {
 }
 
 .feedback-form input [type="text"],
-.feedback-form input [type="emial"],
+.feedback-form input [type="email"],
 .feedback-form textarea {
     width: 100%;
     margin-bottom: 15px;
@@ -43,7 +43,7 @@ nav {
 }
 
 .feedback-form button {
-    background-color: #ff0051;
+    background-color: #023e8a;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -54,9 +54,10 @@ nav {
 }
 
 .feedback-form button:hover {
-    background-color: #d94a77;
+    background-color: #03045e;
 }
 
+/* media query for smaller screens */
 @media only screen and (max-width: 600px) {
     .feedback-from {
         width: 90%;

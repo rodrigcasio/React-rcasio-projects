@@ -55,8 +55,11 @@ const FeedbackForm = () => {
                     value={formData.feedback}
                     onChange={handleChange}
                 ></textarea>
-                <button type="submit" onClick={handleSubmit}>Submit Feedback</button>
-
+                <button 
+                    className="feedback-form"
+                    type="submit" 
+                    onSumbit={handleSubmit}
+                >Submit Feedback</button>
                 <h2>We'd Love To Hear From You!</h2>
                 <p>Please share your feedback with us.</p>
             </form>
