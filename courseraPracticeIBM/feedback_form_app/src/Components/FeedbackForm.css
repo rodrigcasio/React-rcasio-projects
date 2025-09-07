@@ -26,8 +26,8 @@ nav {
     margin-bottom: 20px;
 }
 
-.feedback-form input [type="text"],
-.feedback-form input [type="email"],
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
 .feedback-form textarea {
     width: 100%;
     margin-bottom: 15px;
