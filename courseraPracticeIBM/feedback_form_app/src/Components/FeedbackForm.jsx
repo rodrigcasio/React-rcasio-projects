@@ -25,8 +25,8 @@ const FeedbackForm = () => {
             setFormData({       // reseting the formData state to empty values, clearing form fields after submission
                 name: '',
                 email: '',
-                feedback: ''
-                
+                rating: '',
+                feedback: ''            // for practice, added 'rating' variable to reset it.
             });
             alert(`Thank you for your valuable feedback!`);
         }
