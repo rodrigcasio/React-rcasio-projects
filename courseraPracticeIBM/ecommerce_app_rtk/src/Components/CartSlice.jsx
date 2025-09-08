@@ -3,8 +3,14 @@
 // for this file it is needed to install @reduxjs/toolkit and react-redux as a third-party module.
 import  { createSlice } from 'react-redux'
 
-const CartSlice = createSlice({     // initialized with one createSlice Redux toolkit function
 
+// Slice Creation
+const CartSlice = createSlice({     // initialized with one createSlice Redux toolkit function
+    name : 'cart',  // represents the name of the slice
+    initialState,   // an object representing the intial state o slice 
+    reducers: { // an object containing reducer functions. Each key-value pair represents a single reducer, where the key is the name of the action and the vlaue is the reducer function
+
+    }
 });
 
 
