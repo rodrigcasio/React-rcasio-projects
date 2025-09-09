@@ -1,47 +1,45 @@
 // Implementing logic for the Redux toolkit to ensure when "Add To Cart" is clicked, the info of the product qty should be available
 // globally to any component
 // for this file it is needed to install @reduxjs/toolkit and react-redux as a third-party module.
-import  { createSlice } from '@reduxjs/toolkit'
 
+import { createSlice } from '@reduxjs/toolkit'
 
-// Slice Creation
-const CartSlice = createSlice({     // initialized with one createSlice Redux toolkit function
-    name : 'cart',  // represents the name of the slice
-    initialState,   // an object representing the intial state o slice 
-    reducers: { // an object containing reducer functions. Each key-value pair represents a single reducer, where the key is the name of the action and the vlaue is the reducer function
+const initialState = {
+    cartItems: [],
+};
+
+const CartSlice = createSlice({
+    name: 'cart',
+    initialState,
+    reducers: {
         addItemToCart(state, action) {
             const existingItem = state.cartItems.find(item => item.id === action.payload.id);
-            if(existingItem){
-                existingItem.quantity + 1;
-            }else{
-                state.cartItems.push({...action.payload, quantity: 1});
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                state.cartItems.push({ ...action.payload, quantity: 1 });
             }
         },
-        removeItemFromCart(state, action){
+        removeItemFromCart(state, action) {
             state.cartItems = state.cartItems.filter(item => item.id !== action.payload);
         },
-        clearCart(state){
+        clearCart(state) {
             state.cartItems = [];
         },
-        increaseItemQuantity(state, action){
+        increaseItemQuantity(state, action) {
             const itemToIncrease = state.cartItems.find(item => item.id === action.payload);
-            if(itemToIncrease){
+            if (itemToIncrease) {
                 itemToIncrease.quantity += 1;
             }
         },
-        decreaseItemQuantity(state, action){
+        decreaseItemQuantity(state, action) {
             const itemToDecrease = state.cartItems.find(item => item.id === action.payload);
-            if(itemToDecrease && itemToDecrease > 1){
+            if (itemToDecrease && itemToDecrease.quantity > 1) {
                 itemToDecrease.quantity -= 1;
             }
-        },       
+        },
     }
-
 });
-
-const initialState = {      // initialized an empty array
-    cartItems: [],
-};
 
 export const {
     addItemToCart,
