@@ -17,7 +17,7 @@ const CartSlice = createSlice({     // initialized with one createSlice Redux to
                 state.cartItems.push({...action.payload, quantity: 1});
             }
         },
-        removeItemsFromCart(state, action){
+        removeItemFromCart(state, action){
             state.cartItems = state.cartItems.filter(item => item.id !== action.payload);
         },
         clearCart(state){
