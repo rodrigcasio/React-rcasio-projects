@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import  useSelector from 'react-redux';
+import { useSelector } from 'react-redux';        // import hooks from React redux
 
 // this a practice exercise to implement a new feature component with the concept of implementing super coins
 
