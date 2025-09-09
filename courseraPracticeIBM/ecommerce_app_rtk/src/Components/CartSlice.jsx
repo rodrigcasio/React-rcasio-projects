@@ -45,7 +45,7 @@ const initialState = {      // initialized an empty array
 
 export const {
     addItemToCart,
-    remoteItemFromCart,
+    removeItemFromCart,
     clearCart,
     increaseItemQuantity,
     decreaseItemsQuantity,
